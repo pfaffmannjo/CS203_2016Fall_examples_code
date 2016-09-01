@@ -21,6 +21,6 @@ int main(int argc, char *argv[]) {
   printf("\n");
       
   for(cnt = 0; cnt < 10; cnt++) {
-    printf("%p%  %p\n", &aDouble[cnt], (aDouble + cnt) );
+    printf("%p  %p\n", &aDouble[cnt], (aDouble + cnt) );
   }
 }
