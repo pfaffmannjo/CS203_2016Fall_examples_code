@@ -1,9 +1,10 @@
 
 build:
-  gcc -S if_expression.c
-  gcc -S for_expression.c
-  gcc -S dowhile_expression.c
-  gcc -S while_expression.c
+	gcc -S math_ops.c
+	gcc -S if.c
+	gcc -S for.c
+	gcc -S dowhile.c
+	gcc -S while.c
 
 clean:
-  rm -f *.s
+	rm -f *.s

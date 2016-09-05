@@ -1,14 +1,15 @@
+#include <stdio.h>
+
 int main (int argc, char *argv[]) {
 
   int x = 3;
   int z = 10;
 
-  int cnt;
+  int cnt = 0;
 
-  for(cnt = 0; cnt < z; cnt++) {
+  do {
     x++;
-    cnt++;
-  }
-
+  } while (cnt < z);
+  
   printf("%d\n", cnt);
 }

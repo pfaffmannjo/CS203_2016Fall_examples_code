@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 int main (int argc, char *argv[]) {
 
   int x = 3;
@@ -5,9 +7,10 @@ int main (int argc, char *argv[]) {
 
   int cnt = 0;
 
-  do {
+  while (cnt < z) {
     x++;
-  } while (cnt < z);
+    cnt++;
+  }
   
   printf("%d\n", cnt);
 }
