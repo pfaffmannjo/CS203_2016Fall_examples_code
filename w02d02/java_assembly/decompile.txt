@@ -1,0 +1,125 @@
+Compiled from "JavaEx.java"
+class JavaEx {
+  JavaEx();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: bipush        97
+       2: istore_1
+       3: iconst_0
+       4: istore_2
+       5: iconst_0
+       6: istore_3
+       7: lconst_0
+       8: lstore        4
+      10: fconst_0
+      11: fstore        6
+      13: dconst_0
+      14: dstore        7
+      16: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      19: ldc           #3                  // String Hi! Number %d\n
+      21: iconst_1
+      22: anewarray     #4                  // class java/lang/Object
+      25: dup
+      26: iconst_0
+      27: iconst_5
+      28: invokestatic  #5                  // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      31: aastore
+      32: invokevirtual #6                  // Method java/io/PrintStream.printf:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
+      35: pop
+      36: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      39: ldc           #7                  // String This works.\n
+      41: iconst_0
+      42: anewarray     #4                  // class java/lang/Object
+      45: invokevirtual #6                  // Method java/io/PrintStream.printf:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
+      48: pop
+      49: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      52: ldc           #8                  // String This does not work.\n
+      54: iconst_0
+      55: anewarray     #4                  // class java/lang/Object
+      58: invokevirtual #6                  // Method java/io/PrintStream.printf:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
+      61: pop
+      62: iconst_0
+      63: istore        9
+      65: iload         9
+      67: bipush        10
+      69: if_icmpge     99
+      72: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      75: ldc           #9                  // String %d
+      77: iconst_1
+      78: anewarray     #4                  // class java/lang/Object
+      81: dup
+      82: iconst_0
+      83: iload         9
+      85: iinc          9, 1
+      88: invokestatic  #5                  // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      91: aastore
+      92: invokevirtual #6                  // Method java/io/PrintStream.printf:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
+      95: pop
+      96: goto          65
+      99: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     102: ldc           #10                 // String \n
+     104: iconst_0
+     105: anewarray     #4                  // class java/lang/Object
+     108: invokevirtual #6                  // Method java/io/PrintStream.printf:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
+     111: pop
+     112: iconst_0
+     113: istore        10
+     115: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     118: ldc           #9                  // String %d
+     120: iconst_1
+     121: anewarray     #4                  // class java/lang/Object
+     124: dup
+     125: iconst_0
+     126: iload         10
+     128: iinc          10, 1
+     131: invokestatic  #5                  // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     134: aastore
+     135: invokevirtual #6                  // Method java/io/PrintStream.printf:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
+     138: pop
+     139: iload         10
+     141: bipush        10
+     143: if_icmplt     115
+     146: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     149: ldc           #10                 // String \n
+     151: iconst_0
+     152: anewarray     #4                  // class java/lang/Object
+     155: invokevirtual #6                  // Method java/io/PrintStream.printf:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
+     158: pop
+     159: iconst_0
+     160: istore        11
+     162: iload         11
+     164: bipush        10
+     166: if_icmpge     196
+     169: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     172: ldc           #9                  // String %d
+     174: iconst_1
+     175: anewarray     #4                  // class java/lang/Object
+     178: dup
+     179: iconst_0
+     180: iload         11
+     182: invokestatic  #5                  // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     185: aastore
+     186: invokevirtual #6                  // Method java/io/PrintStream.printf:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
+     189: pop
+     190: iinc          11, 1
+     193: goto          162
+     196: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     199: ldc           #10                 // String \n
+     201: iconst_0
+     202: anewarray     #4                  // class java/lang/Object
+     205: invokevirtual #6                  // Method java/io/PrintStream.printf:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
+     208: pop
+     209: return
+
+  int add_values(int, int);
+    Code:
+       0: iload_1
+       1: iload_2
+       2: iadd
+       3: ireturn
+}
