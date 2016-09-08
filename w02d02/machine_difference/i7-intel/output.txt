@@ -1,0 +1,12 @@
+ x 5
+ b 0x7ffeb0db170c
+ c 0x7ffeb0db1700
+*b 5
+&b 0x7ffeb0db1700
+&c 0x7ffeb0db16f8
+int size   : 4
+double size: 8
+float size : 4
+x size     : 4
+b size     : 8
+c size     : 8
