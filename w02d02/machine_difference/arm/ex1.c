@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main(int argc, char *argv[]) {
+
+  int x;
+  int *b;
+  int **c;
+  
+  x = 5;
+  b = &x;
+  c = &b;
+  
+  printf (" x %d\n",x);
+  
+  printf (" b %p\n",  b);
+  printf (" c %p\n",  c);
+  printf ("*b %x\n", *b);
+  printf ("&b %p\n", &b);
+  printf ("&c %p\n", &c);
+
+  printf ("int size   : %d\n",sizeof(int));
+  printf ("double size: %d\n",sizeof(double));
+  printf ("float size : %d\n",sizeof(float));
+  printf ("x size     : %d\n",sizeof(x));
+  printf ("b size     : %d\n",sizeof(b));
+  printf ("c size     : %d\n",sizeof(c));
+}
